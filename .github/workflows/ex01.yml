@@ -34,7 +34,9 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo 'The time was ${{ steps.hello.outputs.time }}.'
+      run: |
+        echo Hello, world!
+        echo 'Today is ${{ steps.hello.outputs.time }}.'
 
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
